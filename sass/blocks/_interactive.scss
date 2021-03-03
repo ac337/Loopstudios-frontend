@@ -1,0 +1,35 @@
+.interactive {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    margin-bottom: 135px;
+    &__img {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__text {
+        background: $white;
+        position: relative;
+        z-index: 2;
+        margin-left: -160px;
+        padding: 94px 0 0 97px;
+        width: 49%;
+        p {
+            color: $darkGray;
+            margin: 0;
+            font-size: 1.25em;
+            line-height: 1.7em;
+            margin-bottom: 2px;
+            margin-top: 26px;
+        }
+    }
+
+    h2 {
+        font: 300 4em $josefinFont;
+        text-transform: uppercase;
+    }
+}

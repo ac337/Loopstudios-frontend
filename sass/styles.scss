@@ -1,0 +1,16 @@
+//Configuración guias de estilo
+@import "config/colors";
+@import "config/fonts";
+
+
+//Estilos base
+@import "base/base";
+@import "base/normalize";
+
+//Bloques
+@import "blocks/nav";
+@import "blocks/header";
+@import "blocks/interactive";
+@import "blocks/creation";
+@import "blocks/footer";
+@import "blocks/media"

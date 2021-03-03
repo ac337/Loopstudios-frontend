@@ -1,0 +1,185 @@
+@media only screen and (max-width: 1110px) {
+    .content {
+        padding: 0 24px;
+    }
+    .header-section {
+        .navigation {
+            display: none;
+            background: $black;
+            &.active {
+                display: flex;
+                position: fixed;
+                overflow: hidden;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 6;
+                flex-flow: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 25px; 
+                a {
+                    font-size: 2em;
+                    font-family: $josefinFont;
+                    text-transform: uppercase;
+                    line-height: 1.7em;
+                }
+                .logo_nav, .close {
+                    display: inline-block;
+                    position: absolute;
+                }
+                .logo_nav {
+                    top: 37px;
+                    left: 24px;
+                    width: 145px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .burger {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-section {
+        margin-bottom: 60px;
+        h1 {
+            font-size: 4em;
+        }
+    }
+    .interactive {
+        margin-bottom: 35px;
+        h2 {
+            font-size: 2.5em;
+        }
+        &__text {
+            margin-left: -60px;
+            padding: 30px 0 0 30px;
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+    .creations {
+        margin-bottom: 55px;
+        &__content {
+            grid-template-columns: 1fr  1fr;
+            li {
+                height: 350px;
+                background-size: cover !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .header-section {
+        margin-bottom: 96px;
+        padding: 40px 0 194px;
+        h1 {
+            font-size: 3.2em;
+            line-height: 1em;
+            width: 100%;
+            padding: 26px 23px 16px;
+            letter-spacing: 1px;
+        }
+        header {
+            margin-bottom: 159px;
+            .logo {
+                width: 145px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .interactive {
+        margin-bottom: 95px;
+        flex-flow: column;
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            margin-bottom: 17px;
+        }
+        &__text {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            p {
+                margin-top: 0;
+                font-size: 1.25em;
+                padding: 0 15px; 
+            }
+        }
+        &__img {
+            margin-bottom: 21px;
+        }
+    }
+    .creations {
+        margin-bottom: 86px;
+        position: relative;
+        padding-bottom: 60px;
+        &__title {
+            justify-content: center;
+            margin-bottom: 15px;
+            h3 {
+                font-size: 2.7em;
+                margin: 0 0 32px;
+            }
+            .btn {
+                position: absolute;
+                bottom: 9px;
+            }
+        }
+        &__content {
+            display: block;
+            li {
+                height: 120px;
+                margin-bottom: 24px;
+                background-size: cover !important;
+                a {
+                    padding: 0 20px 19px;
+                    font-size: 1.9em;
+                }
+            }
+        }
+    }
+    footer {
+        padding: 57px 0 70px;
+        .logo {
+            margin-bottom: 28px;
+        }
+        .content {
+            flex-flow: column;
+            justify-content: center;
+        }
+        .navigation_bottom nav.navigation {
+            flex-flow: column;
+            justify-content: center;
+            margin-bottom: 51px;
+            a {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+        }
+        .social {
+            margin: 0;
+            nav.navigation {
+                justify-content: center;
+                a {
+                    margin: 2px 8px 0;
+                }
+            }
+        }
+        .copyright {
+            top: 10px;
+        }
+    }
+}

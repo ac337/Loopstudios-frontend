@@ -1,0 +1,35 @@
+nav.navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        display: inline-block;
+        margin-right: 30px;
+        margin-top: 3px;
+        color: $white;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 5px;
+        font-size: 1.3em;
+        &:last-child {
+            margin-right: 0;
+        }
+        &::before {
+            content: '';
+            height: 1px;
+            width: 50%;
+            background: $white;
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            left: 25%;
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+    .logo_nav, .close {
+        display: none;
+    }
+}

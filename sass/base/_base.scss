@@ -1,0 +1,27 @@
+body {
+  font: 400 12px $alataFont;
+  margin: 0;
+}
+
+.content {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.btn {
+    font: 300 1.2em $alataFont;
+    background: transparent;
+    line-height: 40px;
+    padding: 0 38px 0;
+    border: 1px solid $black;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: $black;
+    transition: all .3s;
+    cursor: pointer;
+    letter-spacing: 5px;
+    &:hover {
+        background: $black;
+        color: $white
+    }
+}

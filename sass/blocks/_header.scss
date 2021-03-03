@@ -1,0 +1,28 @@
+.header-section {
+    background: url(../images/desktop/image-hero.jpg) no-repeat;
+    background-size: cover;
+    padding: 64px 0 84px 0;
+    margin-bottom: 162px;
+    h1 {
+        font: 300 6em $josefinFont;
+        width: 58.7%;
+        padding: 38px 39px 28px;
+        text-transform: uppercase;
+        line-height: 0.98em;
+        border: 2px solid $white;
+        color: $white;
+    }
+    .burger {
+        display: none;
+    }
+    header {
+        margin-bottom: 126px;
+    }
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
